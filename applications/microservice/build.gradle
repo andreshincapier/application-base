@@ -1,0 +1,14 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation project(":domain-usecase")
+    implementation project(":entry-points-reactive-web")
+
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.reactivecommons.utils:object-mapper:0.1.0'
+    runtime('org.springframework.boot:spring-boot-devtools')
+}
+
+repositories {
+    mavenCentral()
+}

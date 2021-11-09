@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: retries-dlq-strategy
+  devtools:
+    add-properties: false
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: guest
+    password: guest
